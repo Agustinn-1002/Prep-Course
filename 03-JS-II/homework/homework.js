@@ -74,6 +74,17 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 
+  switch (color) {
+    case "blue":
+    case "red":
+    case "green":
+    case "orange":
+      return `This is ${color}`;
+      break;
+    default:
+      return "Color not found";
+      break;
+  }
   
 }
 
@@ -81,12 +92,32 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  
+  switch (numero) {
+    case 10:
+    case 5:
+      return true;
+      break;
+    default:
+      return false;
+      break;
+  }
+  
+
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+
+ 
+
+  /*  if (numero > 20 && numero < 50) {
+      return true;
+   }else{
+     return false;
+   } */
 }
 
 function esEntero(numero) {
@@ -97,6 +128,13 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
+  if (numero - Math.floor(numero) == 0) {
+    return true;
+} else {
+    return false;
+}
+
 }
 
 function fizzBuzz(numero) {
@@ -104,6 +142,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return 'fizzbuzz';
+  }if (numero % 3 === 0 ) {
+    return "fizz";
+  }if (numero % 5 === 0) {
+    return "buzz";
+  }else{
+    return numero;
+  }
+
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -113,6 +162,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+
+  if (condition) {
+    
+  }
+
 }
 
 function esPrimo(numero) {
@@ -121,6 +175,9 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+
+
+
 }
 
 function esVerdadero(valor){
